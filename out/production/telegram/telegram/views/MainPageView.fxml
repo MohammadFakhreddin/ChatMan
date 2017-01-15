@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="629.0" prefWidth="710.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telegram.controllers.MainPageController">
+    <children>
+        <ListView fx:id="contactList" layoutX="7.0" layoutY="372.0" prefHeight="250.0" prefWidth="108.0" style="-fx-background-color: #FF1744;" />
+        <AnchorPane prefHeight="56.0" prefWidth="880.0" style="-fx-background-color: FF1744;">
+            <children>
+                <Button fx:id="myProfile" layoutX="6.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="43.0" prefWidth="160.0" style="-fx-background-color: FF1744;" text="ویرایش اطلاعات" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="targetUserProfile" layoutX="158.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="43.0" prefWidth="151.0" style="-fx-background-color: FF1744;" text="مشاهده ی پروفایل" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="moreMessages" layoutX="309.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: FF1744;" text="پیام های بیشتر" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="privateChat" layoutX="417.0" layoutY="7.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="43.0" prefWidth="108.0" style="-fx-background-color: FF1744;" text="چت مخفی" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="17.0" />
+                    </font>
+                </Button>
+            </children>
+        </AnchorPane>
+        <Button fx:id="sendBtn" cacheHint="QUALITY" depthTest="ENABLE" layoutX="802.0" layoutY="578.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="43.0" prefWidth="71.0" style="-fx-background-color: #FF1744;" text="ارسال" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="B Yekan" size="19.0" />
+            </font>
+        </Button>
+        <TextField fx:id="inputField" layoutX="122.0" layoutY="578.0" prefHeight="43.0" prefWidth="668.0" style="-fx-border-color: FF1744;" />
+        <TextArea fx:id="chatField" editable="false" layoutX="122.0" layoutY="132.0" prefHeight="438.0" prefWidth="750.0" style="-fx-border-color: FF1744;" />
+        <Label alignment="CENTER" layoutX="751.0" layoutY="5.0" prefHeight="43.0" prefWidth="120.0" style="-fx-background-color: FF1744;" text="گفتمان" textAlignment="CENTER" textFill="WHITE">
+            <font>
+                <Font name="Tahoma" size="28.0" />
+            </font>
+        </Label>
+        <Button fx:id="refreshBtn" layoutX="13.0" layoutY="69.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="47.0" prefWidth="65.0" style="-fx-background-color: FF1744;" textFill="WHITE">
+            <font>
+                <Font name="B Yekan" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../res/refresh.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="searchBtn" layoutX="90.0" layoutY="68.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="47.0" prefWidth="65.0" style="-fx-background-color: FF1744;" textFill="WHITE">
+            <font>
+                <Font name="B Yekan" size="20.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="33.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../res/search.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+      <Label fx:id="privateChatMod" alignment="CENTER" layoutX="487.0" layoutY="68.0" prefHeight="46.0" prefWidth="384.0" style="-fx-background-color: #323232;" text="حالت چت مخفی" textFill="WHITE">
+         <font>
+            <Font name="B Yekan" size="20.0" />
+         </font>
+      </Label>
+      <ListView fx:id="friendAndGroupListView" layoutX="7.0" layoutY="131.0" prefHeight="235.0" prefWidth="108.0" style="-fx-background-color: #FF1744;" />
+      <TextField fx:id="searchField" layoutX="178.0" layoutY="68.0" prefHeight="47.0" prefWidth="218.0" />
+      <Button fx:id="cancelBtn" layoutX="408.0" layoutY="68.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="46.0" prefWidth="65.0" style="-fx-background-color: #323232;" text="لغو" textFill="WHITE">
+         <font>
+            <Font name="B Yekan" size="16.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

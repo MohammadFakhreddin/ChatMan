@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="460.0" prefWidth="676.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telegram.controllers.UserPageController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="58.0" prefWidth="676.0" style="-fx-background-color: #FF1744;">
+            <children>
+                <Label alignment="CENTER" layoutX="512.0" layoutY="-4.0" prefHeight="57.0" prefWidth="162.0" text="مشاهده ی پروفایل" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="20.0" />
+                    </font>
+                </Label>
+            </children>
+        </Pane>
+        <VBox layoutX="513.0" layoutY="74.0" prefHeight="239.0" prefWidth="115.0">
+            <children>
+                <Label alignment="CENTER_RIGHT" prefHeight="46.0" prefWidth="160.0" text="نام کاربری" textAlignment="CENTER" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="B Yekan" size="18.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="134.0" text="نام و نام خانوادگی" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="B Yekan" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER_RIGHT" layoutX="228.0" layoutY="69.0" prefHeight="51.0" prefWidth="134.0" text="شماره تلفن" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="B Yekan" size="17.0" />
+                    </font>
+                </Label>
+                <Label alignment="TOP_RIGHT" layoutX="228.0" layoutY="119.0" prefHeight="130.0" prefWidth="122.0" text="توضیحات بیشتر" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="B Yekan" size="17.0" />
+                    </font>
+                    <opaqueInsets>
+                        <Insets />
+                    </opaqueInsets>
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </Label>
+            </children>
+        </VBox>
+        <Pane layoutX="10.0" layoutY="74.0" prefHeight="246.0" prefWidth="499.0">
+            <children>
+                <TextField fx:id="userNameField" layoutX="13.0" prefHeight="36.0" prefWidth="486.0" />
+                <TextField fx:id="nameField" layoutX="13.0" layoutY="47.0" prefHeight="38.0" prefWidth="486.0" />
+                <TextArea fx:id="moreInfoField" layoutX="13.0" layoutY="130.0" prefHeight="110.0" prefWidth="486.0">
+                    <padding>
+                        <Insets top="20.0" />
+                    </padding>
+                </TextArea>
+                <TextField fx:id="phoneNumberField" layoutX="13.0" layoutY="92.0" prefHeight="31.0" prefWidth="486.0" />
+            </children>
+        </Pane>
+        <Pane layoutX="23.0" layoutY="320.0" prefHeight="121.0" prefWidth="629.0">
+            <children>
+                <Button fx:id="friendBtn" layoutX="14.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="درخواست دوستی" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="reportBtn" layoutX="14.0" layoutY="76.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="گزارش تخلف" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="acceptChangesBtn" layoutX="483.0" layoutY="76.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #4CAF50;" text="ثبت تغیرات" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="createGroupBtn" layoutX="173.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="ساخت گروه" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="createChanelBtn" layoutX="328.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="ساخت کانال" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+                <Button fx:id="blockBtn" layoutX="173.0" layoutY="76.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="مسدود کردن ارتباط" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+            <Button fx:id="unBlockBtn" layoutX="328.0" layoutY="76.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="بازکردن ارتباط" textFill="WHITE">
+               <font>
+                  <Font name="B Yekan" size="15.0" />
+               </font>
+            </Button>
+            <Button fx:id="unFriendBtn" layoutX="483.0" layoutY="24.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #FF1744;" text="لغو دوستی" textFill="WHITE">
+               <font>
+                  <Font name="B Yekan" size="15.0" />
+               </font>
+            </Button>
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

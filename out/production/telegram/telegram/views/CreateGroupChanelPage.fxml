@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="472.0" prefWidth="360.0" style="-fx-background-color: #FFF;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="telegram.controllers.CreateGroupChanelPageController">
+    <children>
+        <Pane layoutY="-3.0" prefHeight="58.0" prefWidth="360.0" style="-fx-background-color: #FF1744;">
+            <children>
+                <Label alignment="CENTER" layoutX="261.0" layoutY="1.0" prefHeight="57.0" prefWidth="97.0" text="ساخت" textAlignment="RIGHT" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="20.0" />
+                    </font>
+                </Label>
+            <Label fx:id="groupLabel" alignment="CENTER_RIGHT" layoutX="180.0" layoutY="1.0" prefHeight="57.0" prefWidth="97.0" text="گروه" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="B Yekan" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="chanelLabel" alignment="CENTER_RIGHT" layoutX="180.0" layoutY="1.0" prefHeight="57.0" prefWidth="97.0" text="کانل" textAlignment="RIGHT" textFill="WHITE">
+               <font>
+                  <Font name="B Yekan" size="20.0" />
+               </font>
+            </Label>
+                <Button fx:id="createBtn" layoutX="28.0" layoutY="9.0" mnemonicParsing="false" onAction="#OnAction" prefHeight="41.0" prefWidth="132.0" style="-fx-background-color: #4CAF50;" text="ساخت" textFill="WHITE">
+                    <font>
+                        <Font name="B Yekan" size="15.0" />
+                    </font>
+                </Button>
+            </children>
+        </Pane>
+      <Label alignment="CENTER_RIGHT" layoutX="249.0" layoutY="74.0" prefHeight="46.0" prefWidth="63.0" text="نام" textAlignment="CENTER">
+         <font>
+            <Font name="B Yekan" size="18.0" />
+         </font>
+      </Label>
+          <TextField fx:id="groupNameField" layoutX="55.0" layoutY="79.0" prefHeight="36.0" prefWidth="168.0" />
+      <ListView fx:id="contactList" layoutX="45.0" layoutY="191.0" prefHeight="251.0" prefWidth="114.0" style="-fx-background-color: #FF1744;" />
+      <ListView fx:id="membersList" layoutX="206.0" layoutY="189.0" prefHeight="251.0" prefWidth="106.0" style="-fx-background-color: #FF1744;" />
+      <Label alignment="CENTER_RIGHT" layoutX="45.0" layoutY="134.0" prefHeight="46.0" prefWidth="114.0" text="تمام افراد" textAlignment="CENTER">
+         <font>
+            <Font name="B Yekan" size="18.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER_RIGHT" layoutX="202.0" layoutY="134.0" prefHeight="46.0" prefWidth="114.0" text="اعضای گروه" textAlignment="CENTER">
+         <font>
+            <Font name="B Yekan" size="18.0" />
+         </font>
+      </Label>
+    </children>
+</AnchorPane>
